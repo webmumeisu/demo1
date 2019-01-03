@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/all_car.css">
+    <title>BMW 全部车型</title>
+</head>
+<body>
+        <div class="header">
+                <div id="top-1">
+                    <img class="bc" src="img/header/header.png">
+                    <div class="logo"><img src="img/header/logo.jpg" ></div>
+                    
+                    <h1 class="top-h1">MOTOR</h1>
+                    <div class="mobile-menu-icon">
+                      <i class="fa "></i>
+                    </div>
+                    <table></table>
+                    <div class="top-nav">
+                          <nav id="top-navbar" >
+                              <ul>
+                                  <li><a href="http://localhost:3000/index.html" >首页</a></li>
+                                  <li><a href="all_car.html" target="_blank" class="active">全部车型</a></li>
+                                  <li><a href="http://localhost:3000/kehu.html" target="_blank" >客户业务</a></li>
+                                  <li><a href="http://localhost:3000/financial.html" target="_blank">金融服务</a></li>
+                                  <li id="top2-navbar"><a style="cursor: pointer;">其它</a>
+                                    <ul>
+                                      <li class="login-register"><a class="login" href="http://127.0.0.1:3000/dl.html">登陆</a><a class="register position-absolute" href="http://127.0.0.1:3000/zc.html">注册</a></li>
+                                      <li><a href="http://127.0.0.1:3000/tdjs.html">团队介绍</a></li>
+                                    </ul>
+                                  </li>
+                              </ul>      
+                          </nav>
+                        </div>
+                </div>
+              </div>
+    <!-- <header id="header"></header> -->
+    <div class="">
+        <!--1.头
+        <div class="ds2-mobilepreview ds2-page--wrapper">
+            <div class="ds2-navigation-main ds2-component">
+                <div class="ds2-navigation-main--container">
+                    <div class="row ds2-row-padding">
+                        <div class="ds2-navigation-main--top-bar small-12 columns">
+                            <div class="ds2-navigation-main--id-module">
+                                <img class="ds2-navigation-main--id-module-image" src="img/logo.png" alt="">
+                            </div>
+                            <nav id="ds2-globalnav">
+                                <ul class="ds2-navigation-main--level ds2-navigation-main-list">
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link" href="#">首页</a></li>
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link" href="#">全部车型</a></li>
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link" href="#">BMW 服务</a></li>
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link" href="#">BMW 天地</a></li>
+                                </ul>
+                                <ul class="ds2-navigation-main--fastlane ds2-navigation-main--list">
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link my_font" href="#">大客户业务</a></li>
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link my_font" href="#">查找经销商</a></li>
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link my_font" href="#">官方认证二手车</a></li>
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link my_font" href="#">BMW 金融服务</a></li>
+                                    <li class="ds2-navigation-main--item"><a class="ds2-navigation-main--link my_font" href="#">BMW 售后服务</a></li>
+                                </ul>
+                                <ul class="ds2-navigation-main--list">
+                                    <li class="ds2-navigation-main--item ds2-navigation-main--special-item">
+                                        <a class="ds2-navigation-main--link ds2-navigation-main-font-m ds2-icon" href="#">
+                                        <span class="title">快速链接</span>
+                                        </a>
+                                    </li>
+                                    <li class="ds2-navigation-main--item ds2-navigation-main--special-item">
+                                        <a class="ds2-navigation-main--link ds2-navigation-main-font-m ds2-icon" href="#">
+                                        <span class="title">搜索</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        
+        <!--2.内容-->
+        <main class="main">
+        <div class="ds2-main-wrapper ds2-page--row-expanded">
+            <div class="ds2-page--top-spacing">
+                <div class="ds2-models ds2-component">
+                    <!--标题：查找你的BMW-->
+                    <div class="ds2-models--header ds2-row-padding row">
+                        <h3 class="ds2-models--header-title large-12 ds2-no-uppercase columns">查找你的BMW</h3>
+                    </div>
+                    <!--2.筛选框-->
+                    <form class="show-for-medium-up">
+                        <ul id="ulist" class="ds2-models--filter ds2-font-s ds2-models-js--filter ds2-row-padding" data-filter-target=".ds2-models-js--series" data-filter-checkbox=".ds2-models-js--label-group">
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field " type="checkbox" id="ds2-js-filter--sedan" >
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox ">四门轿车</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">四门轿跑车</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">敞篷轿跑车</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">双门轿跑车</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">GT</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">轿跑车</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">SAV</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">两厢运动轿车</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">旅行车</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">BMW i</label>
+                                        </span>
+                            </li>
+                            <li class="ds2-models--filter-item medium-4 large-2 columns end" style="height:17px;">
+                                        <span class="ds2-label--group ds2-models-js--label-group">
+                                            <input class="ds2-hidden-field" type="checkbox" id="ds2-js-filter--sedan">
+                                            <label for="ds2-js-filter--sedan" class="ds2-font-s ds2-label--checkbox ds2-icon--checkbox">电式混合动力</label>
+                                        </span>
+                            </li>
+                        </ul>
+                    </form>
+                    <!--3.图片展示-->
+                    <div id="show" class="ds2-models-js--container ds2-disclaimer--asterix-on">
+                        <!--1系-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <!--3.尾
+        <div class="ds2-main-footer ds2-component ds2-tracking-aware ds2-page--row">
+            <div class="row ds2-main-footer--inner ds2-row-padding">
+                <div class=" columns">
+                    <div class="ds2-main-footer--table clearfix">
+                        <aside class="ds2-main-footer--widget">
+                            <h5 class="ds2-main-footer--title">
+                                <span class="ds2-main-footer--title-inner">联系我们
+                                </span>
+                            </h5>
+                            <ul class="ds2-main-footer--list inline-list">
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">预约试驾
+                                    </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">咨询销售信息
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">索取产品手册
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">查找经销商
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">联系我们
+                                </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="ds2-main-footer--widget">
+                            <h5 class="ds2-main-footer--title">
+                                <span class="ds2-main-footer--title-inner">快速链接
+                                </span>
+                            </h5>
+                            <ul class="ds2-main-footer--list inline-list">
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">BMW 官方旗舰店
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">法律声明
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">环保信息公开
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">网站地图
+                                </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="ds2-main-footer--widget">
+                            <h5 class="ds2-main-footer--title">
+                                <span class="ds2-main-footer--title-inner">BMW 天地
+                                </span>
+                            </h5>
+                            <ul class="ds2-main-footer--list inline-list">
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">BMW 新闻
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">BMW 汽车生产之旅
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">大客户业务
+                                </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="ds2-main-footer--widget">
+                            <h5 class="ds2-main-footer--title">
+                                <span class="ds2-main-footer--title-inner">其他宝马网站
+                                </span>
+                            </h5>
+                            <ul class="ds2-main-footer--list inline-list">
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">华晨宝马
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">BMW 互联驾驶在线商店
+                                </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="ds2-main-footer--widget">
+                            <h5 class="ds2-main-footer--title">
+                                <span class="ds2-main-footer--title-inner">官方社交媒体
+                                </span>
+                            </h5>
+                            <ul class="ds2-main-footer--list inline-list">
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">宝马中国官方微信
+                                </a>
+                                </li>
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">宝马中国官方微博
+                                </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="ds2-main-footer--widget">
+                            <h5 class="ds2-main-footer--title">
+                                <span class="ds2-main-footer--title-inner">ICP备案
+                                </span>
+                            </h5>
+                            <ul class="ds2-main-footer--list inline-list">
+                                <li class="ds2-main-footer--list-item"><a class="ds2-main-footer--link ds2-tracking-js--event " href="#">京ICP备08004883号
+                                </a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <hr class="ds2-main-footer--hr">
+                    <p class="ds2-main-footer--copyright text-right">&copy; BMW 中国 2018</p>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

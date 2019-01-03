@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>BMW</title>
+</head>
+<body>
+  <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+  <div class="header">
+      <div id="top-1">
+          <img class="bc" src="img/header/header.png">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/header/logo.jpg" >
+            </a>
+          </div>
+          
+          <h1 class="top-h1">MOTOR</h1>
+          <div class="mobile-menu-icon">
+            <i class="fa "></i>
+          </div>
+          <table></table>
+          <div class="top-nav">
+            <nav id="top-navbar" >
+                <ul>
+                    <li><a href="http://localhost:3000/index.html" class="active">首页</a></li>
+                    <li><a href="all_car.html" target="_blank" >全部车型</a></li>
+                    
+                    <li><a href="http://localhost:3000/kehu.html" target="_blank">客户业务</a></li>
+                    <li><a href="http://localhost:3000/financial.html" target="_blank" >金融服务</a></li>
+                    <li id="top2-navbar"><a style="cursor: pointer;">其它</a>
+                      <ul>
+                        <li class="login-register"><a class="login" href="http://127.0.0.1:3000/dl.html">登陆</a><a class="register position-absolute" href="http://127.0.0.1:3000/zc.html">注册</a></li>
+                        <li><a href="http://127.0.0.1:3000/tdjs.html">团队介绍</a></li>
+                      </ul>
+                    </li>
+                </ul>    
+            </nav>
+          </div>
+      </div>
+      <div class="welcome">
+        <div class="my-width">
+        <ul id="top_lunbo">
+            <li>
+              <a class="a1" href="#"><img src="img/lunbo/lunbo1.jpg" ></a>
+              <a class="a2" href="#">
+                <span>BMW 7系黑焰版，限量上市<br>时代由此划分</span>
+                <button class="btn btn-dark mybtn">了解详情</button>
+              </a>
+            </li>
+            <li>
+                <a class="a1" href="#"><img src="img/lunbo/lunbo2.jpg" ></a>
+                <a class="a2" href="#">
+                  <span>时不待我<br>新BMW 5系Li</span>
+                  <button class="btn btn-dark mybtn" >了解详情</button>
+                </a>
+            </li>
+            <li>
+                  <a class="a1" href="#"><img src="img/lunbo/lunbo3.jpg" ></a>
+                  <a class="a2" href="#">
+                    <span>敢作敢为BMW X1 2019款上市<br>
+                      利率低至0.88%                
+                    </span>
+                    <button class="btn btn-dark mybtn" >了解详情</button>
+                  </a>
+            </li>
+        </ul>
+        <ul id="num">
+        </ul>
+        <div id="left">&lt;</div>
+        
+        <div id="right">&gt;</div>
+        <div style="clear:both;"></div>
+      </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <table></table>
+      <div class="car-lei ">
+        <h4>总会有你心仪的一款</h4>
+        <ul id="xilie">
+            <li><a class="w-100 h-100 float-left" href="all_car.html" target="_blank"></a><span>全部车型</span></li>
+            <li><span>BMW 1系</span><h1>1</h1></li>
+            <li><span>BMW 2系</span><h1>2</h1></li>
+            <li><span>BMW 3系</span><h1>3</h1></li>
+            <li><span>BMW 4系</span><h1>4</h1></li>
+            <li class="list"><span>BMW 5系</span><h1>5</h1></li>
+            <li class="myli ">
+              <!-- <h6 ><a class="move" href="#"><span>&gt;</span>BMW 1系</a></h6>
+              <div class=" car">
+                <a href="#"><img src="img/car/bmw-1-20171012.png"></a>
+                <div>
+                  <h4>BMW 1系两厢运动轿车</h4>
+                  <h5>车型售价 ￥ 237,800起</h5>
+                  <a class="move" href="car_detail.html" target="_blank"><span>&gt;</span>了解详情</a>
+                </div>
+              </div>
+              <div class=" car">
+                <a href="#"><img src="img/car/bmw-1series_sedan.png"></a>
+                  <div>
+                    <h4>BMW 1系三厢运动轿车</h4>
+                    <h5>车型售价 ￥199,800起</h5>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </div> -->
+            </li>
+            <!-- <li class="myli ">
+              <h6 ><a class="move" href="#"><span>&gt;</span>BMW 2系</a></h6>
+              <div class="car">
+                <a href="#"><img src="img/car/bmw-2-series1.png"></a>
+                <div>
+                  <h4>新BMW 2系双门轿跑车</h4>
+                  <h5>车型售价 ￥255,800起</h5>
+                  <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                </div>
+              </div>
+              <div class=" car">
+                <a href="#"><img src="img/car/bmw-2-series2.png"></a>
+                <div>
+                  <h4>新BMW 2系敞篷轿跑车</h4>
+                  <h5>车型售价 ￥299,800起</h5>
+                  <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                </div>
+              </div>
+              <div class=" car">
+                <a href="#"><img src="img/car/bwm-2-series3.png"></a>
+                <div>
+                  <h4>新BMW 2系旅行车</h4>
+                  <h5>车型售价 ￥224,800起</h5>
+                  <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                </div>
+              </div>
+              <div class=" car">
+                <a href="#"><img src="img/car/bmw-2-series4.png"></a>
+                <div>
+                  <h4>新BMW 2系多功能旅行车</h4>
+                  <h5>车型售价 ￥269,800起</h5>
+                  <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                </div>
+              </div>
+            </li>
+            <li class="myli ">
+                <h6 ><a class="move" href="#"><span>&gt;</span>BMW 3系</a></h6>
+                <div class=" car">
+                  <a href="#"><img src="img/car/bmw-3ser-sedan1.png"></a>
+                  <div>
+                    <h4>新BMW 3系四门轿车</h4>
+                    <h5>车型售价 ￥ 316,800起</h5>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </div>
+                <div class=" car">
+                  <a href="#"><img src="img/car/bmw-3ser-gt2.png"></a> 
+                    <div>
+                      <h4>BMW 3系GT</h4>
+                      <h5>车型售价 ￥369,800起</h5>
+                      <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                    </div>
+                  </div>
+            </li>
+            <li class="myli ">
+                  <h6 ><a class="move" href="#"><span>&gt;</span>BMW 4系</a></h6>
+                  <div class=" car">
+                    <a href="#"><img src="img/car/bmw4-1.png"></a>
+                    <div>
+                      <h4>新BMW 3系四门轿车</h4>
+                      <h5>车型售价 ￥ 316,800起</h5>
+                      <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                    </div>
+                  </div>
+                  <div class=" car">
+                    <a href="#"><img src="img/car/bmw4-2.png"></a>
+                    <div>
+                        <h4>BMW 3系GT</h4>
+                        <h5>车型售价 ￥369,800起</h5>
+                        <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                    </div>
+                  </div>
+                  <div class=" car">
+                    <a href="#"><img src="img/car/bmw4-3.png"></a>  
+                      <div>
+                          <h4>BMW 3系GT</h4>
+                          <h5>车型售价 ￥369,800起</h5>
+                          <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                      </div>
+                    </div>
+            </li>
+            <li class="myli ">
+                <h6 ><a class="move" href="#"><span>&gt;</span>BMW 5系</a></h6>
+                <div class=" car">
+                  <a href="#"><img src="img/car/bmw5-1.png"></a>
+                  <div>
+                    <h4>BMW 1系两厢运动轿车</h4>
+                    <h5>车型售价 ￥ 237,800起</h5>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </div>
+            </li> -->
+            <li><span>BMW 6系</span><h1>6</h1></li>
+            <li><span>BMW 7系</span><h1>7</h1></li>
+            <li><span>BMW X</span><h1>X</h1></li>
+            <li><span>BMW M</span><h1 class="myfont">BMW M</h1></li>
+            <li><span>BMW i</span><h1 class="myfont">BMW i</h1></li>
+            <li class="list"><span>电动性能</span><h1 class="myfont">iPerformance</h1></li>
+            <li class="myli ">
+                <!-- <h6 ><a class="move" href="#"><span>&gt;</span>BMW 6系</a></h6>
+                <div class=" car">
+                  <a href="#"><img src="img/car/bmw-1-20171012.png"></a>
+                  <div>
+                    <h4>BMW 1系两厢运动轿车</h4>
+                    <h5>车型售价 ￥ 237,800起</h5>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </div>
+                <div class=" car">
+                  <a href="#"><img src="img/car/bmw-1series_sedan.png"></a>  
+                    <div>
+                      <h4>BMW 1系三厢运动轿车</h4>
+                      <h5>车型售价 ￥199,800起</h5>
+                      <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                    </div>
+                  </div> -->
+              </li>
+              <!-- <li class="myli ">
+                <h6 ><a class="move" href="#"><span>&gt;</span>BMW 7系</a></h6>
+                <div class="car">
+                  <a href="#"><img src="img/car/bmw-2-series1.png"></a>
+                  <div>
+                    <h4>新BMW 2系双门轿跑车</h4>
+                    <h5>车型售价 ￥255,800起</h5>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </div>
+                <div class=" car">
+                  <a href="#"> <img src="img/car/bmw-2-series2.png"></a>
+                  <div>
+                    <h4>新BMW 2系敞篷轿跑车</h4>
+                    <h5>车型售价 ￥299,800起</h5>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </div>
+                <div class=" car">
+                  <a href="#"><img src="img/car/bwm-2-series3.png"></a>
+                  <div>
+                    <h4>新BMW 2系旅行车</h4>
+                    <h5>车型售价 ￥224,800起</h5>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </div>
+                <div class=" car">
+                  <a href="#"><img src="img/car/bmw-2-series4.png"></a>
+                  <div>
+                    <h4>新BMW 2系多功能旅行车</h4>
+                    <h5>车型售价 ￥269,800起</h5>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </div>
+              </li>
+            <li class="myli ">
+              <h6 ><a class="move" href="#"><span>&gt;</span>BMW X系</a></h6>
+              <div class=" car">
+                    <a href="#"><img src="img/car/bmw-3ser-sedan1.png">
+                    </a>
+                    <div>
+                      <h4>新BMW 3系四门轿车</h4>
+                      <h5>车型售价 ￥ 316,800起</h5>
+                      <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                    </div>
+              </div>
+              <div class=" car">
+                <a href="#"><img src="img/car/bmw-3ser-gt2.png">
+                </a> 
+                <div> 
+                  <h4>BMW 3系GT</h4>
+                  <h5>车型售价 ￥369,800起</h5>
+                  <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                </div>
+              </div>
+              <div class=" car">
+                    <a href="#"><img src="img/car/bmw-3ser-gt2.png"></a>    
+                        <div>
+                          <h4>BMW 3系GT</h4>
+                          <h5>车型售价 ￥369,800起</h5>
+                          <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                        </div>
+              </div>
+              <div class=" car">
+                      <a href="#"><img src="img/car/bmw-3ser-sedan1.png"></a>
+                      <div>
+                        <h4>新BMW 3系四门轿车</h4>
+                        <h5>车型售价 ￥ 316,800起</h5>
+                        <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                      </div>
+              </div>
+              <div class=" car">
+                      <a href="#"> <img src="img/car/bmw-3ser-gt2.png"></a>  
+                        <div>
+                          <h4>BMW 3系GT</h4>
+                          <h5>车型售价 ￥369,800起</h5>
+                          <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                        </div>
+              </div>
+              <div class=" car">
+                      <a href="#"><img src="img/car/bmw-3ser-gt2.png"></a>    
+                          <div>
+                            <h4>BMW 3系GT</h4>
+                            <h5>车型售价 ￥369,800起</h5>
+                            <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                          </div>
+              </div>
+            </li>
+              <li class="myli ">
+                    <h6 ><a class="move" href="#"><span>&gt;</span>BMW M系</a></h6>
+                    <div class=" car">
+                      <a href="#"><img src="img/car/bmw4-1.png"></a>
+                      <div>
+                        <h4>新BMW 3系四门轿车</h4>
+                        <h5>车型售价 ￥ 316,800起</h5>
+                        <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                      </div>
+                    </div>
+                    <div class=" car">
+                      <a href="#"><img src="img/car/bmw4-2.png"></a>
+                      <div>
+                          <h4>BMW 3系GT</h4>
+                          <h5>车型售价 ￥369,800起</h5>
+                          <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                      </div>
+                    </div>
+                    <div class=" car">
+                      <a href="#">  <img src="img/car/bmw4-3.png"></a>  
+                        <div>
+                            <h4>BMW 3系GT</h4>
+                            <h5>车型售价 ￥369,800起</h5>
+                            <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                        </div>
+                      </div>
+              </li>
+              <li class="myli ">
+                  <h6 ><a class="move" href="#"><span>&gt;</span>BMW I系</a></h6>
+                  <div class=" car">
+                    <a href="#"><img src="img/car/bmw5-1.png"></a>
+                    <div>
+                      <h4>BMW 1系两厢运动轿车</h4>
+                      <h5>车型售价 ￥ 237,800起</h5>
+                      <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                    </div>
+                  </div>
+              </li>
+              <li class="myli ">
+                  <h6 ><a class="move" href="#"><span>&gt;</span>BMW ip系</a></h6>
+                  <div class=" car">
+                    <a href="#"><img src="img/car/bmw5-1.png"></a>
+                    <div>
+                      <h4>BMW 1系两厢运动轿车</h4>
+                      <h5>车型售价 ￥ 237,800起</h5>
+                      <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                    </div>
+                  </div>
+              </li> -->
+              <div style="clear:both"></div>
+          </ul>
+        <div style="clear:both"></div>
+      </div>
+      <div class="blank"></div>
+      <div class="m-w">
+        <h2 >活动悦享与金融礼遇</h2>
+        <div id="zhong-lunbo">
+          <span class="myspan">新BNW 3系 2019款</span>
+          <span >创新BMW X2</span>
+          <span >BMW X1</span>
+        </div>
+        <div class="mymargin">
+          <ul id="jieshao">
+            <li>
+              <img src="img/lunbo/jieshao1.jpg">
+              <div>
+                <p>2018年10月1日至2018年12月31日，购买新BMW 3系2019款，首付两成起，利率低至0.88%，即刻购车，享受限时金融礼遇。</p>
+                <a class="move" href="#"><span>&gt;</span>了解详情</a>
+              </div>
+            </li>
+            <li>
+                <img src="img/lunbo/jieshao2.jpg">
+                <div>
+                  <p>2018年10月1日至2018年12月31日.畅享创新BMW X2金融方案，首付5.8万元起，利率低至3.88%。打开车门，即刻开启你的潮流座驾！</p>
+                  <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                </div>
+              </li>
+              <li>
+                  <img src="img/lunbo/jieshao3.jpg">
+                  <div>
+                    <p>2018年10月1日至12月31日，购买BMW X1，多种金融计划助力敢为之心，令您即刻从容启程。选择悠贷金融方案或悦贷金融方案，首付5.8万元起，利率低至0.88%，令您无忧购车，悦享驾趣。 </p>
+                    <a class="move" href="#"><span>&gt;</span>了解详情</a>
+                  </div>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="love">
+      <div class="m-w">
+        <h2 >驾车旅行 环游世界</h2>
+        <div  class="gezi">
+          <div class="v1"><video src="img/video/1.mp4"  autoplay muted loop></video>
+            <h3>
+              <p>设计</p>
+              <p>灵感来源于生活</p>
+            </h3>
+          </div>
+          <div class="v2"><video src="img/video/2.mp4" autoplay muted loop></video>
+            <h3>
+              <p>制图</p>
+              <p>每个人都可以衡量这个世界</p>
+            </h3>
+          </div>
+          <div class="v3"><video src="img/video/3.mp4"  autoplay muted loop></video>
+            <h3>
+              <p>忠告</p>
+              <p>如何成为一个有创意机器</p>
+            </h3>
+          </div>
+          <div class="img1"><img  src="img/video/img1.jpg" alt="">
+            <h3>
+              <p>赌博</p>
+              <p>赛车中疯狂飙升的肾上腺素</p>
+            </h3>
+          </div>
+          <div class="v4"><video src="img/video/4.mp4" autoplay muted loop></video>
+            <h3>
+              <p>老式汽车</p>
+              <p>宝马2002：来自东方的黄金宝藏</p>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="blank1"></div>
+    </div>
+
+    <div id="footer">
+      <div class="blank"></div>
+      <div class="m-w">
+        <div class="bottom">
+          <ul >
+            <li>
+              <h4>联系我们</h4>
+              <a href="#">预约试驾</a>
+              <a href="#">咨询销售信息</a>
+              <a href="#">索取产品手册</a>
+              <a href="#">查找经销商</a>
+              <a href="us.html" target="_blank">联系我们</a>
+            </li>
+            <li>
+                <h4>快速连接</h4>
+                <a href="#">BMW 官方旗舰店</a>
+                <a href="#">法律声明</a>
+                <a href="#">环保信息公开</a>
+                <a href="#">网站地图</a>
+            </li>
+            <li>
+              <h4>BWM天地</h4>
+              <a href="#">BMW 新闻</a>
+              <a href="#">BMW 汽车生产之旅</a>
+              <a href="#">大客户业务</a>
+            </li>
+            <li>
+              <h4>其他宝马网站</h4>
+              <a href="#">华晨宝马</a>
+              <a href="#">BMW 互联驾驶在线商店</a>
+            </li>
+            <li>
+              <h4>官方社交媒体</h4>
+              <a href="#">宝马中国官方微信</a>
+              <a href="#">宝马中国官方微博</a>
+            </li>
+            <li>
+              <h4>ICP备案</h4>
+              <a href="#">京ICP备08004883号</a>
+            </li>
+          </ul>
+          <div class="bottom_img">
+            <p>© BMW 中国 2018&nbsp;京ICP备08004883号</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

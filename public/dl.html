@@ -1,0 +1,193 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title> Boye </title>
+		<meta name="author" content="Boye" />  
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />
+		<meta charset="utf-8"/>
+		<style type="text/css">
+		body{
+			margin:0;
+			background:#020203;
+			position:absolute;
+		}
+		video{
+			position:fixed;
+			right:0;
+			bottom:0;
+			min-width:100%;
+			min-height:100%;
+			width:auto;
+			height:auto;
+			z-index:-9999;
+		}
+		.logo{ 
+			background:url(img/logo.png) no-repeat;
+			width:103px;
+			height:115px;
+			left:100px;
+			position:absolute;
+			top:50px;
+			display:block;
+			background-size:cover;
+		}
+		.bj{
+			width:450px;
+			height:330px;
+			background:black;
+			opacity:0.5;
+			position:absolute;
+			left:500px;
+			top:200px;
+			z-index: -1;
+		}
+		.wenzi1,.wenzi2{
+			color:gray;
+			font-size:18px;
+			left:250px;
+			position:absolute;
+			font-weight:20px;
+		}
+		.wenzi1{
+			top:90px;
+		}
+		.wenzi2{
+			top:120px;
+		}
+		.dl{
+			text-decoration:none;
+			color:white;
+			font-size:22px;
+		}
+		.ptdl{
+			list-style:none;
+			border:1px solid gray 0.5;
+			width: 450px;
+			height:50px;
+			text-align:center;
+			position:absolute;
+			
+			}
+		.ptdl{
+			margin-left:460px;
+			margin-top:134px;
+			background-color:black;
+			opacity:0.5;
+		}
+		.ewmdl{
+			margin-left:685px;
+			margin-top:134px;
+			background:#020A0B;
+		}
+		.inputbox1,.inputbox2{
+			margin-left:530px;
+			margin-top:220px;
+			position:absolute;
+		}
+		.inputbox2{
+			margin-top:270px;
+		}
+		.inputbox1,.inputbox2 b{
+			color:white;
+		}
+		#uname,#upwd{
+			width:250px;
+			height:30px;
+		}
+		.btn{
+			margin-top:350px;
+			margin-left:550px;
+			width:340px;
+			height:40px;
+		}
+		.db{
+			text-align:center;
+			margin-top:50px;
+			margin-left:665px;
+			position:absolute;
+		}
+		.db a{
+			text-decoration:none;
+			color:white;
+			font-size:12px;
+			}
+		.db span{
+			color:white;
+			font-size:10px;
+			}
+		</style>
+    </head> 
+	
+    <body>
+	<div>
+		<div>
+		<video autoplay muted loop style="width:100%;">
+		<source src="img/video/video.mp4">
+		</video>
+		</div>
+		<div class="logo"><a href="http://localhost:3000/index.html" style="display:block;width:100%;height:100%"></a></div>
+		<span class="wenzi1">BWM</span>
+		<span class="wenzi2">官网登录</span>
+		<div class="bj"></div>
+			<ul>
+				<li class="ptdl"><a href="#" class="dl">普通登录</a></li>
+			</ul>
+			<div class="inputbox1">
+				<b>用户名称：</b>
+					<input class="input" type="text" id="uname" placeholder="请输入用户名...." onblur="search1()"/>
+				</div>
+				<div class="inputbox2">
+					<b>用户密码：</b>
+					<input class="input" type="password" id="upwd" placeholder="请输入密码...." >
+				</div>
+				<div class="btnbox">
+					<input id="btn" class="btn" type="button" value="登录" onclick="loginTo()"/>
+				</div>
+				<div class="db" style="text-align: center"><a href="#">忘记密码？</a><span>|</span><a href="zc.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注册</a></div>
+	</div>
+		<script src="common.js"></script>
+	<script>
+		function search1(){
+			var name = $("uname").value;
+			var str = name.match(/(.+)@((163){1})(\.com){1}(.cn)?/i);
+			if(str == null){
+				$("btn").disabled = true;
+			}
+			else{
+				$("btn").disabled = false;
+			}
+		}
+
+
+
+		function loginTo(){
+			console.log(1)
+			location.href='http://127.0.0.1:3000/index.html';
+		// 	var xhr = createXhr();
+		// 	xhr.onreadystatechange = function(){
+		// 		if (xhr.readyState == 4 && xhr.status == 200)
+		// 		{
+		// 			var result = xhr.responseText;
+		// 			if (result == "登陆成功！")
+		// 			{
+		// 				alert(result);
+		// 				location.href='http://127.0.0.1:3000/index.html';
+		// 			}
+		// 			else{
+		// 				alert(result);
+		// 			}
+		// 		}
+		// 	}
+		// 	xhr.open('post','/myPro/login',true);
+
+		// 	//xhr.setRequestHeader('Content-Type','applicaption/x-www-form-urlencoded');
+		// 	xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		// 	var uname = $('uname').value;
+		// 	var upwd = $('upwd').value;
+		// 	var formdata = 'uname='+uname+'&upwd='+upwd;
+		// 	xhr.send(formdata);
+		 }
+	</script>
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html >
+<html>
+	<head>
+  <script src="js/common.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/user_register.js"></script>
+		<title> Boye </title>
+		<meta name="author" content="Boye" />  
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/zc.css" />
+		<style type="text/css"/>
+        table{
+        margin-left:500px;
+        border:1px solid black;
+        background:rgba(0,0,0,.3);
+        height:500px;
+        width:400px;
+        position:absolute;
+        }
+        td{
+        color:white;
+        }
+        .button{
+        height:50px;
+        width:300px;
+        margin-left:55px;
+       
+        }
+		</style>
+    </head>
+	
+    <body>
+	<div>.
+	<div>
+		<div>
+		<video autoplay muted loop style="width:100%;">
+		<source src="img/video/video.mp4">
+		</video>
+		</div>
+		<div class="logo"></div>	
+		<div class="dl">已有账号？去<a class="dlz" href="dl.html">登陆</a></div>
+	</div>
+	 <table>
+          <tr>
+            <td class="zhdl"><h1>账号注册</h1></td>
+            <td></td>
+          </tr>
+          <tr class="yhm">
+            <td>用户名：</td>
+            <td>
+              <div>
+                <input id="uname" type="text" placeholder="请输入您的用户名" class="login-input-uname" name="uname" autocomplete="off" onfocus="uname_focus()" onblur="uname_blur()"/>
+              </div>
+              <span class="allspan" id="inuname"></span>
+            </td>
+          </tr>
+          <tr>
+          <td>密码：</td>
+            <td>
+              <div>
+                <input type="password" placeholder="请输入您的密码" class="login-input-upwd" name="upwd" id="upwd" onblur="checkupwd()"/>
+              </div>
+              <span class="allspan" id="inupwd"></span>
+            </td>
+          </tr>
+          <tr class="zcsr">
+          <td>再次输入密码：</td>
+            <td>
+              <div>
+                <input type="password" placeholder="请再次输入您的密码" class="login-input-cpwd" name="cpwd" id="cpwd" onblur="checkpwd()"/>
+              </div>
+              <span class="allspan" id="incpwd"></span>
+            </td>
+          </tr>
+          <tr class="yx">
+          <td>邮箱：</td>
+            <td>
+              <div>
+                <input type="text" placeholder="请输入您的邮箱" class="login-input-upwd" name="email" id="email" onblur="checkemail()"/>
+              </div>
+              <span class="allspan" id="inemail"></span>
+            </td>
+          </tr>
+          <tr class="sjh">
+          <td>手机号：</td>
+            <td>
+              <div>
+                <input type="text" placeholder="请输入您的手机号" class="login-input-upwd" name="phone" id="phone" onblur="checkphone()"/>
+              </div>
+              <span class="allspan" id="inphone"></span>
+            </td>
+          </tr>
+          <tr class="zc">
+            <td colspan="3">
+              <input type="button" value="注册" class="button" onclick="post_Msg()"/>
+            </td>
+          </tr>
+        </table>
+		<div>
+			<p class="db"><a href="#">About Netease</a>-
+				<a href="#">公司简介</a>-
+				<a href="#">联系方式</a>-
+				<a href="#">OAuth2.0认证</a>-
+				<a href="#">招聘信息</a>-
+				<a href="#">客户服务</a>-
+				<a href="#">相关法律</a>-
+				<a href="#">网络营销</a>
+			</p>
+		</div>
+		<div>
+			<p class="db2">公司版权所有&copy1997-2018</p>
+		</div>
+	</div>
+	<script src = "common.js"></script>
+	<script>
+	</script>
+	</body>
+		
+</html>

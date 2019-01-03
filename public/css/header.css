@@ -1,0 +1,234 @@
+body{
+    background-color: #EAE9EF;
+    overflow-x: hidden;
+    font-size: 14px;
+    color: white;    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+#loader-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader{
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    -webkit-animation: go 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: go 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    z-index: 1001;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+
+    -webkit-animation: go 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: go 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+
+    -webkit-animation: go 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: go 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+@keyframes go{
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+    -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0);  /* IE 9 */
+    transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+}
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+ /* Loaded */
+ .loaded #loader-wrapper .loader-section.section-left {
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.loaded #loader-wrapper .loader-section.section-right {
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;  
+            transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+    visibility: hidden;
+
+    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateY(-100%);  /* IE 9 */
+            transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.3s 1s ease-out;  
+            transition: all 0.3s 1s ease-out;
+}
+/*header*/
+.header{
+    height: 260px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  a:hover, a:focus { text-decoration: none; }
+.header{
+    background: url(../img/header/welcome-bg.jpg) top center no-repeat;
+    background-size: 100% 628px;
+}
+.header>#top-1{
+    margin: 0 auto;
+    max-width: 1132px;
+    position: relative;
+}
+.header>#top-1 img.bc{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 1132px;
+}
+.logo{
+position: absolute;
+right:-9%;
+top: 30%;
+width: 110px;
+}
+.logo img{
+    width: 100%;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.top-h1,.top-navbar{
+    position: relative;
+}
+.header>#top-1 h1{
+    color: white;
+    top: 0;
+    width: 100%;
+    font-size: 46px;
+    margin: 0;
+    padding-top: 25px;
+    text-align: center;
+}
+.header>#top-1>div.top-nav{
+    margin: 36px auto 0 auto;
+    max-width: 650px;
+}
+#top-navbar{
+    position: relative;
+}
+#top-navbar>ul{
+    float: left;
+    display: block;
+}
+#top-navbar>ul li{
+    list-style: none;
+    float: left;
+    text-transform: uppercase;
+}
+#top-navbar>ul li>a{
+    color: white;
+    font-weight: 300;
+    padding: 15px 25px;
+    width: 124px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+#top-navbar>ul li a:hover,#top-navbar>ul li a.active{
+    color: #b53636;
+    background: url(../img/header/nav-underline.png) center 80% no-repeat;
+}
+#top-navbar>ul li>ul{
+    list-style: none;
+    padding-left:0; 
+    position: absolute;
+    display: none;
+}
+#top2-navbar:hover ul{
+    display: block;
+}
+#top2-navbar ul li.login-register{
+    position: relative;
+    left:20px;
+}
+#top2-navbar ul li.login-register>.register,#top2-navbar ul li.login-register>.login{
+    padding:15px 0;
+    width: 80px;
+}
+#top2-navbar ul li.login-register .register{
+    display: none;
+    float: right;
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+#top2-navbar ul li.login-register:hover .register{
+    display: block
+}

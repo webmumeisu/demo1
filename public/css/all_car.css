@@ -1,0 +1,381 @@
+body {
+    background: url(../img/header/welcome-bg.jpg);
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", "Helvetica", "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    position: relative;
+    cursor: default;
+   
+}
+/*最外 background:url(../img/header/welcome-bg.jpg)*/
+.ds2-page-wrapper{
+    min-height:100%;
+}
+/*logo*/
+.ds2-navigation-main--id-module{
+    margin-right:1px;
+    position:relative;
+    top:0;
+    z-index:470;
+}
+.ds2-navigation-main--id-module-image{
+    width:103px;
+    right:5px;
+    position:absolute;
+    float:right;
+    top:10px;
+    z-index:470;
+}
+/*头
+.ds2-component .ds2-navigation-main{
+    overflow:visible;
+}
+
+.ds2-navigation-main--container{
+    background-color:#8e8e8e;
+}
+.ds2-row-padding{
+    padding-left:37.5px;
+    padding-right:37.5px;
+    margin-left:37px;
+    margin-right:37px;
+    height:100px;
+}
+.ds2-navigation-main--top-bar{
+    padding:0 7.5px;
+    height:100%;
+    width:100%;
+    position:relative;
+    float:left;
+}
+#ds2-globalnav{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.ds2-navigation-main--level{
+    margin-top:65px;
+    margin-bottom:15px;
+    display:inline-block;
+}
+.ds2-navigation-main--item:first-child{
+    padding-left:0;
+}
+.ds2-navigation-main--item{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 7px;
+    padding-left: 7px;
+    text-rendering: initial;
+}
+.ds2-navigation-main--link {
+    color: #fff;
+    position: relative;
+    display: block;
+    transition: color .25s ease;
+    font-size:17px;
+}
+.ds2-navigation-main--link:hover{
+    text-decoration:none;
+}
+.ds2-navigation-main--list {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.ds2-navigation-main--fastlane {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}*/
+
+/*头：list2
+.ds2-navigation-main--list {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.ds2-navigation-main--item:first-child {
+    padding-left: 0;
+}
+.my_font{
+    font-size:14px;
+    margin-top:-3px;
+}*/
+/*列表三*/
+.ds2-navigation-main--special-item:first-child {
+    padding-left: 7px;
+}
+.ds2-navigation-main-font-m {
+    font-size: 17px;
+    height: 20px;
+    margin-bottom:0;
+}
+.ds2-icon {
+    margin-top: -5px;
+    padding-left: 30px;
+}
+/*main内容*/
+main.main{
+    min-height:100%;
+}
+.ds2-page--row-expanded{
+    margin-top:-1px;
+}
+.ds2-page--top-spacing{
+    margin-top:45px;
+}
+.ds2-models{
+    position:relative;
+    margin-bottom:75px;
+}
+.ds2-models--header{
+    position:relative;
+}
+.ds2-row-padding{
+    padding-left:95.5px;
+    padding-right:37.5px;
+}
+.ds2-models--header-title{
+    color:#fff;
+    margin:40px 0;
+}
+.ds2-no-uppercase{
+    line-height:31px;
+    letter-spacing:0;
+}
+.large-12{
+    width:100%;
+    font-weight:bold;
+}
+.columns{
+    position: relative;
+    padding-left: .46875rem;
+    padding-right: .46875rem;
+    float: left;
+}
+/*筛选框*/
+.ds2-models--filter{
+    color:#fff;
+    list-style:none;
+    margin-bottom:0;
+    display:flex;
+    flex-wrap:wrap;
+}
+.ds2-font-s{
+    font-size:14px;
+    line-height:17px;
+    margin-top:-3px;
+}
+.ds2-models--filter-item{
+    margin-bottom:30px;
+    list-style:none;
+}
+.large-2{
+    width:200px;
+}
+.ds2-hidden-field{
+    opacity:0;
+    position:absolute;
+    display:inline-block;
+}
+.ds2-label--checkbox{
+    padding-left:27.5px;
+    position:relative;
+    cursor:pointer;
+    display:inline-block;
+    font-weight:bold;
+}
+.ds2-label--checkbox::before{
+    content:"";
+    display:block;
+    height:20px;
+    left:0;
+    position:absolute;
+    top:-1px;
+    width:20px;
+    
+}
+.ds2-icon--checkbox:before{
+    background:url(../img/input.svg)center center no-repeat;
+}
+.ds2-icon--checkbox-checked:before{
+    background:url(../img/input_right.svg)center center no-repeat;
+}
+/*图片展示*/
+.ds2-models--series .ds2-cardlist--card img{
+    width:100%;
+    height:100%;
+}
+.ds2-models--series{
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 37px;
+    padding:0 37.5px;
+}
+
+.row::after{
+    clear:both;
+}
+.row::before{
+    content:"";
+    display:table;
+}
+.ds2-models--card-item-.ds2-active{
+    display:table;
+}
+.large-3{
+    width:25%;
+}
+.ds2-model-card--image:hover{
+    transform:scale(1.1);
+}
+.ds2-model-card--image{
+    display:block;
+    position:relative;
+    margin:0;
+    transition:all .5s linear;
+}
+.ds2-model-card--image a{
+    display:block;
+    margin:0;
+    position:relative;
+    overflow:hidden;
+}
+h4.ds2-no-uppercase{
+    margin-top:-3px;
+    margin-bottom:15px;
+    line-height:12px;
+    letter-spacing:0;
+    font-size:18px;
+    font-weight:bold;
+}
+.ds2-model-card--price{
+    font-size:14px;
+    line-height:17px;
+    margin-top:-3px;
+    margin-bottom:12px;
+    color:#fff;
+    text-rendering:optimizeLegibility;
+    font-weight:bold;
+}
+/*了解详情*/
+.ds2-linklist{
+    list-style:no inside;
+    margin-bottom:0;
+}
+.ds2-linklist--item:last-child {
+    margin-bottom: 11px;
+}
+.ds2-linklist--item{
+    margin-top:-4px;
+    margin-right:15px;
+    clear:left;
+    list-style-type:none;
+}
+.ds2-link {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0;
+    margin-top: -3px;
+    margin-bottom: 12px;
+    font-family: "bmwTypeWebBoldAll", "Arial", "Helvetica", sans-serif;
+    position: relative;
+    font-weight: normal;
+    transition: all .25s ease;
+    display: block;
+}
+.ds2-linklist--item .ds2-link.ds2-icon {
+    line-height: 20px;
+    color:#fff;
+    font-size:14px;
+}
+.ds2-icon--arrow-big-r-grey-2::after,.ds2-icon--arrow-big-r-grey-2::before{
+    background: url(../img/right-logo.svg) no-repeat;
+    background-position: -3px -5px;
+    background-size: 30px;
+    left: -8px;
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.ds2-linklist--item a:hover{
+    text-decoration:none;
+    color:#0653b6 !important;
+}
+/*底部*/
+.ds2-main-footer{
+    padding:26px 0 25px 0;
+    height:331px;
+    font-size:14px;
+    line-height:17px;
+    letter-spacing:0;
+    background:#8e8e8e;
+    margin:0;
+    color:#fff;
+    z-index:450;
+}
+
+.ds2-main-footer--table{
+    display:table;
+}
+.ds2-main-footer--widget{
+    display:table-row;
+}
+.ds2-main-footer--title{
+    width:113px;
+    margin-top:1px;
+    padding-right:29px;
+    padding-bottom:13px;
+    display:table-cell;
+    margin-bottom:30px;
+    color:#fff;
+}
+.ds2-main-footer--title-inner{
+    display:block;
+    white-space:nowrap;
+    font-size:14px;
+    font-weight:bold;
+}
+.ds2-main-footer--list{
+    padding-bottom:13px;
+    display:table-cell;
+    margin-bottom:30px;
+    width:auto;
+}
+.inline-list{
+    list-style:none;
+}
+.inline-list>li{
+    display:inline-block;
+}
+.ds2-main-footer--list-item{
+    margin:0 11px 8px 0;
+    vertical-align:top;
+}
+.ds2-main-footer--link{
+    font-size:14px;
+    color:#fff;
+}
+.ds2-main-footer--link:hover{
+    text-decoration:none;
+}
+/*hr*/
+.ds2-main-footer--hr{
+    width:1185px;
+    border-color:#bbb;
+    margin-top:0;
+}
+.ds2-main-footer--copyright{
+    margin-top:-3px;
+    margin-bottom:0;
+    padding-right:0;
+}
+.text-right{
+    text-align:right;
+}
+

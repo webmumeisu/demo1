@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Keywords" conten="关键词">
+	<meta name="Description" conten="描述内容">
+	<title>团队介绍</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #canvas-club{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right:0;
+            z-index: -999;
+        }
+        .container{
+            width: 800px;
+            height:500px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        .handle{
+            float:left;
+            margin:0 2px;
+            width:50px;
+            height:500px;
+            cursor:pointer;
+            background:#F0F;
+            font:bold 24px Arial, Helvetica, sans-serif;
+            text-align:center;
+            color:#FFF;
+            -webkit-border-radius:25px;
+            -moz-border-radius:25px;
+            -o-border-radius:25px;
+            border-radius:25px;
+            -webkit-transition:0.3s ease-in-out;
+            -moz-transition:0.3s ease-in-out;
+            -o-transition:0.3s ease-in-out;
+            -ms-transition:0.3s ease-in-out;
+        }
+
+        .handle:hover{
+            background:#FC3;
+            -webkit-transform:scale(1.02);
+            -moz-transform:scale(1.02);
+            -ms-transform:scale(1.02);
+            -o-transform:scale(1.02);
+        }
+
+        .select{
+            background:#FC3;
+        }
+
+        .slide{
+            background:url(images/grey.png);
+            float:left;
+            width:380px;
+            height:500px;
+            display:none;
+            margin:0 4px;
+            -webkit-border-radius:25px;
+            -moz-border-radius:25px;
+            -o-border-radius:25px;
+            border-radius:25px;
+        }
+		/*定义动画*/
+        img{
+           
+            display:block;
+            width:280px;
+            height:300px;
+            margin:20px auto 0;
+            padding:5px;
+			transition:all 1s linear;
+        }
+		/*鼠标移动效果*/
+		img:hover{
+			/*animation:change 1s linear 2s;
+			animation-fill-mode:forwards;*/
+			border-radius:30%;
+		}
+
+        .rotate{
+            margin:50px auto;
+            -webkit-transform:rotate(90deg);
+            -moz-transform:rotate(90deg);
+            -ms-transform:rotate(90deg);
+            -o-transform:rotate(90deg);
+        }
+        .slide p{
+            color:white;
+            text-align: center;
+			font-family:"STXinwei", "STHupo","MicrosoftJhengHei";
+            font-size: 25px;
+            margin-top: 15px;
+            line-height: 30px
+        }
+		div a{
+			text-decoration:none;
+			color:width;
+			position:absolute;
+			bottom:30px;
+			right:30px;
+			font-weight:bold;
+		}
+		
+	
+
+    </style>
+    <script src="js/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript">
+
+    $(document).ready(function(){
+                var j = 1;
+                 $(".handle").each(function(){
+                 if($.browser.msie&&($.browser.version <= "8.0")) 
+                 {
+                        $(this).children("p").html(j);
+                        j++;
+                 }
+                 else{
+                        var i = $(this).attr("id");
+                        $(this).children("p").html(i);
+                 }
+                })
+    
+                $(".handle").click(function(){
+                    if(!$(this).siblings(".slide").is(":visible")){
+                    $(this).addClass("select");
+                    $(this).siblings(".slide").animate({width:"show"},300);
+                    $(this).parent().siblings().children(".slide").animate({width:"hide"},300);
+                    $(this).parent().siblings().children(".handle").removeClass("select");
+                    }
+                    else{
+                    $(this).siblings(".slide").animate({width:"hide"},300);
+                    $(this).removeClass("select");
+                    }
+                })
+    })
+    
+   
+    </script>
+</head>
+<body>
+
+    <canvas id='canvas-club' ></canvas>
+    <div class="container">
+        
+		<div>
+		 <div class="handle" id="one"><p class="rotate"></p></div>
+		   <div class="slide"><img src="img/tdjs/tlb.gif" />
+             <p>
+            口头禅:学习使我快乐<br>  
+            爱好:吃东西、喝饮料、睡懒觉<br>
+            性别:♂<br>
+            姓名:汤礼坝
+        </p>
+    </div>
+</div>
+
+<div>      
+       <div class="handle" id="two"><p class="rotate"></p></div>
+      <div class="slide"><img src="img/tdjs/m1.jpg" />
+        <p>
+                口头禅:在哪里跌倒 就在哪里躺下<br>  
+                爱好:听音乐、旅游、看电影、敲代码、打羽毛球<br>
+                性别:♂<br>
+                姓名:梅苏
+            </p>
+
+    </div>  
+</div>
+
+<div>   
+       <div class="handle" id="three"><p class="rotate"></p></div>
+      <div class="slide"><img src="img/tdjs/ytr.jpg" />
+        <p>
+                口头禅:睡眠是一门艺术——谁也无法阻挡我追求艺术的脚步!<br>  
+                爱好:篮球 and gril <br>
+                性别:♂<br>
+                姓名:颜挺瑞
+            </p>
+    </div>
+</div>
+
+<div>
+      <div class="handle" id="four"><p class="rotate"></p></div>
+      <div class="slide"><img src="img/tdjs/hzc.jpg" />
+        <p>
+                口头禅:会有猪头替我爱你<br>  
+                爱好:球类活动、看报纸、看电影<br>
+                性别:♂<br>
+                姓名：胡志超
+            </p>
+
+    </div>
+</div>
+
+<div>      
+       <div class="handle" id="five"><p class="rotate"></p></div>
+      <div class="slide"><img src="img/tdjs/swd.jpg" />
+        <p>
+                口头禅:你可以像猪一样的生活，但你永远都不能像猪那样快乐!<br>  
+                爱好:羽毛球、兵乓球、游泳<br>
+                性别:♂<br>
+                姓名：孙文栋
+            </p>
+        
+    </div>  
+</div>
+
+<div>      
+    <div class="handle" id="six"><p class="rotate"></p></div>
+   <div class="slide"><img src="img/tdjs/lhk.jpg" />
+    <p id="a2">
+            口头禅:<br>  
+            爱好:摄影、旅游、自拍、说段子<br>
+            性别:♂<br>
+            姓名:刘惠康
+        </p>
+</div>  
+</div>
+
+<div>      
+    <div class="handle" id="seven"><p class="rotate"></p></div>
+   <div class="slide"><img src="img/tdjs/xxa.jpg" />
+    <p id="a2">
+            口头禅:黑夜就是我的面纱<br>  
+            爱好:吃鸡、联盟<br>
+            性别:♂<br>
+            姓名:徐学奥
+        </p>
+</div>  
+<div class="a1">
+	<a href="http://127.0.0.1:3000/index.html" >返回首页</a>
+</div>
+
+    <script src="js/xg.js"></script>
+ 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

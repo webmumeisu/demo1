@@ -1,0 +1,309 @@
+
+#main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image:linear-gradient(to right,#000,#474747,#888,#474747,#000)
+}
+#main ul{
+    list-style: none;
+    padding-left: 0;
+}
+#main a{
+    text-decoration: none;
+}
+#main>.l-img{
+    position: relative;
+    height: 640px;
+    
+}
+#main>.l-img img{
+    height: 100%;
+    width: 100%;
+}
+#main>.l-img .before_img{
+    padding-right: 15px;
+    position: absolute;
+    text-align: left;
+    width: 80%;
+    left: 8%;
+    top: 8%;
+}
+#main>.l-img .before_img h1{
+    font-size: 48px;
+    letter-spacing: -2.16px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: #fff;
+    line-height: 100%;
+    width: 100%;
+    font-family: "Arial","Helvetica","Noto Sans CJK SC","Noto Sans",sans-serif;
+    font-weight: bold;
+}
+#main>.l-img .before_img>a{
+    font-size: 15px;
+    width:250px;
+    height:50px;
+    line-height: 35px;
+}
+#main .jiesao{
+    padding: 60px 0;
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #c4c4c4;
+}
+#main .jiesao h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 34px;
+    line-height: 1.5;
+    text-align: center;
+}
+#main .jiesao h3{
+    font-size: 1.5625rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+    line-height: 1;
+    text-align: center;
+}
+#main .jiesao p{
+    font-size: 1rem;
+    margin-bottom: 17px;
+    font-family: Arial, "Microsoft YaHei", SimSun;
+    line-height: 1.5;
+    text-align: center;
+}
+.blank1{
+    height: 3rem;
+    width: 100%;
+}
+.blank2{
+    height: 100px;
+    width:100%;
+}
+.m-w{
+    margin: 0 auto;
+    width: 1100px;
+}
+.lunbo{
+  
+    overflow: hidden;
+}
+.m-w>h2{
+    color: white;
+    font-weight:bold;
+    font-size: 25px;
+}
+.lunbo>span{
+    color: white;
+    margin-top: 20px;
+    float: left;
+    width: 170px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right:15px;
+    border-bottom: 5px solid #beb9b9f1;
+}
+.lunbo>span:last-child{
+    margin-right: 0;
+}
+.lunbo>span:hover{
+    border-bottom: 5px solid #0653b6;
+    color: #0653b6;
+}
+.lunbo span.myspan{
+    border-bottom: 5px solid #0653b6;
+    color: #1860befa;
+}
+.mymargin{
+    margin-top: 20px;
+    position: relative;
+    width: 1100px;
+    height: 300px;
+    overflow: hidden;
+}
+.peizhi{
+    height: 300px;
+    padding: 0;
+    width: 3300px;
+    position: absolute;
+}
+.peizhi li{
+    list-style: none;
+    width: 1100px;
+    float: left;
+}
+.peizhi li img{
+    width: 540px;
+    height: 300px;
+    float: left;
+}
+.peizhi li>div{
+    float: right;
+    width: 540px;
+    height: 300px;
+}
+.peizhi li>div a{
+    color:white;
+}
+.peizhi li>div a:hover{
+    color:#0653b6;
+}
+/* 车型图片 */
+#main .m-w .chexin{
+    width: 100%;
+}
+#main .m-w .chexin h2{
+    margin-bottom:30px ;
+    padding-left: 20px;
+}
+#main .m-w .chexin #make{
+    position: relative;
+    height: 273px;
+    overflow: hidden;
+}
+#main .m-w .chexin #make .bmw-img{
+    position: absolute;
+    width:6825px;
+    overflow: hidden;
+    left: -365px;
+}
+#main .m-w .chexin #make .bmw-img li{
+    float: left;
+    height: 268px;
+    width: 445px;
+    margin: 0 5px;
+    position: relative;
+    cursor: pointer;
+}
+#main .m-w .chexin #make .bmw-img li>img{
+    height: 98%;
+    width: 100%;
+    box-shadow: 5px 5px 5px #222222;
+}
+#main .m-w .chexin #make .bmw-img li span{
+    position: absolute;
+    bottom: 2%;
+    background: #1c69d4;
+    right: 0;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+#main .m-w .chexin #make .bmw-img li span>img{
+    width: 100%;
+    height: 100%;
+}
+#main .m-w .chexin #make span#left{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 40px;
+    width:30px;
+    text-align: center;
+    background-color: rgba(155, 149, 149, 0.6);
+    opacity: 0;
+    line-height: 40px;
+}
+#main .m-w .chexin #make span#right{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    height: 40px;
+    width:30px;
+    text-align: center;
+    background-color: rgba(155, 149, 149, 0.6);
+    opacity: 0;
+    line-height: 40px;
+}
+#main .m-w .chexin #make span#left:hover,#main .m-w .chexin #make span#right:hover{
+    background-color: rgba(155, 149, 149, 1);
+}
+.img-line{
+    width: 100%;
+    position: absolute;
+    left: 72px;
+    bottom: 0;
+    height: 5px;
+}
+.img-line span{
+    display: block;
+    width: 72px;
+    position: absolute;
+    height: 5px;
+    background: #1c69d4;
+}
+
+#id1.c1{
+    position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #0f0f0f;
+     opacity:0;
+     z-index: 9;
+ }
+ #id2.c2{
+     width: 842px;
+     height: 500px;
+     background-color: #f9f9f9;
+     position: fixed;
+     left: 50%;
+     top: 50%;
+     padding: 15px;
+     margin-top: -250px;
+     margin-left: -421px;
+     opacity: 0;
+     z-index: 10;
+ }
+ .hide{
+     display: none;
+ }
+ #id2 div{
+     position: relative;
+     overflow: hidden;
+     width: 100%;
+     height: 100%;
+ }
+ #id2 ul{
+     position: absolute;
+    padding-left: 0;
+    width: 10556px;
+    list-style: none;
+}
+ #id2 ul li{
+     float: left;
+     width: 812px;
+     height: 100%;
+    }
+#id2 ul li img{
+    width: 100%;
+    height: 100%;
+}
+#mdl_left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 40px;
+    width:30px;
+    text-align: center;
+    background-color: rgba(155, 149, 149, 0.6);
+    opacity: 1;
+    line-height: 40px;
+}
+#mdl_right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 40px;
+    width:30px;
+    text-align: center;
+    background-color: rgba(155, 149, 149, 0.6);
+    opacity: 1;
+    line-height: 40px;
+}
+span#mdl_left:hover,span#mdl_right:hover{
+    background-color: rgba(155, 149, 149, 1);
+}
